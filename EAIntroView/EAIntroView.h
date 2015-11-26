@@ -82,5 +82,6 @@ typedef NS_ENUM(NSUInteger, EAViewAlignment) {
 - (void)setCurrentPageIndex:(NSUInteger)currentPageIndex animated:(BOOL)animated;
 
 - (void)limitScrollingToPage:(NSUInteger)lastPageIndex;
+- (void)skipIntroduction;
 
 @end
