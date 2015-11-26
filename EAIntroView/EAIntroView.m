@@ -552,6 +552,12 @@
         }
         
         [self crossDissolveForOffset:offset];
+
+        if(self.scrollView.contentOffset.x > 375){
+            self.pageControl.hidden = true;
+        }else{
+            self.pageControl.hidden = false;
+        }
     }
     
     if (self.visiblePageIndex < _pages.count) {
